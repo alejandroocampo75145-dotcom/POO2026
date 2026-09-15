@@ -9,15 +9,19 @@ public class Thermometer {
         
     }
     // Método para registrar/modificar (comportamiento)
-    public boolean setTemperature(int newTemperature) {
+    public int setTemperature(int newTemperature) {
         
-        if((newTemperature<-50) || (newTemperature>100)){
-            return false;
+        if((newTemperature<-50)){
+            return -1;
             
         }
+        else if (newTemperature>100){
+            
+            return -2;
+        }
         else{
-            this.temperature= newTemperature;
-            return true;
+            this.temperature=newTemperature;
+            return 0;
         }
 
     }

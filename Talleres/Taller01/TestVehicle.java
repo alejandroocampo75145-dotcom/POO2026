@@ -2,6 +2,14 @@ public class TestVehicle {
     
     public static void main(String[] args) {
         Vehicle car = new Vehicle();
+        if (car.setBrand("KIA")== Vehicle.Result.OK){
+            System.out.println("OK:El nombre se ingreso exitosamente");
+        }
+        else {
+            System.out.println("ERROR: La marca no puede estar vacía");
+        }
+            
+        
         car.setMaximumSpeed(20);
 
         System.out.println("--- PRUEBAS DE PLACA ---");

@@ -20,9 +20,9 @@ public class TestBankAccount {
 
         
         if (account1.setAccountNumber("CTA-00000")) {
-            System.out.println("Error: El sistema permitio cambiar el numero de cuenta.");
+            System.out.println("EXITO: El sistema permitio cambiar el numero de cuenta.");
         } else {
-            System.out.println("Exito: Se rechazo el cambio de numero de cuenta.");
+            System.out.println("ERROR: Se rechazo el cambio de numero de cuenta.");
         }
 
         System.out.println("\n=== PRUEBAS DE DEPÓSITO ===");
